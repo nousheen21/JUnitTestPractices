@@ -33,9 +33,7 @@ public class StringHelperTest {
 	//A => false;
 	@Test
 	public void testAreFirstAndLastTwoCharactersTheSame_OnlyOneChar(){
-		boolean actual = helper.areFirstAndLastTwoCharactersTheSame("A");
-		boolean expected = false;
-		assertEquals(expected,actual);
+		assertFalse(helper.areFirstAndLastTwoCharactersTheSame("A"));
 	}
 
 }
